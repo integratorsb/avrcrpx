@@ -1,4 +1,4 @@
-/* AVRCRPX - charlieplexing lib for avr.
+п»ї/* AVRCRPX - charlieplexing lib for avr.
  * avrcrpx.c
  *
  * Created: 02.12.2015 8:53:55
@@ -9,7 +9,7 @@
 #include "avrcrpx.h"
 
 uint8_t crpxSt; 
-uint16_t crpxLedsA;// состояния светодиодов
+uint16_t crpxLedsA;// СЃРѕСЃС‚РѕСЏРЅРёСЏ СЃРІРµС‚РѕРґРёРѕРґРѕРІ
 
 
 void crpx12SM()

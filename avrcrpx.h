@@ -1,7 +1,7 @@
-#include <avr/io.h>
+п»ї#include <avr/io.h>
 
-#define COMMON_ANODE  // закоментировать если светодиоды включены по схеме с общим катодом 
-// выводы
+#define COMMON_ANODE  // Р·Р°РєРѕРјРµРЅС‚РёСЂРѕРІР°С‚СЊ РµСЃР»Рё СЃРІРµС‚РѕРґРёРѕРґС‹ РІРєР»СЋС‡РµРЅС‹ РїРѕ СЃС…РµРјРµ СЃ РѕР±С‰РёРј РєР°С‚РѕРґРѕРј 
+// РІС‹РІРѕРґС‹
 #define CRPXP PORTB
 #define CRPXDDR DDRB
 #define CRPX0 PORTB2
