@@ -1,4 +1,4 @@
-﻿/* AVRCRPX - charlieplexing lib for avr.
+﻿/* AVRCRPX - charlieplexing library for avr.
  * avrcrpx.c
  *
  * Created: 02.12.2015 8:53:55
