@@ -17,6 +17,12 @@ enum
 	ON4
 };
 
+uint8_t crpxSt; 
+uint16_t crpxLedsA;// состояния светодиодов
+
 void crpx12SM(void);
-void crpxSetLeds(uint16_t val);
+#define crpxInit() crpxSt = 0
+#define crpxSetLeds(val) crpxLedsA = val
+#define crpxLedOn(n) crpxLedsA |= 1<<n
+#define crpxLedOff(n) crpxLedsA &= ~(1<<n)
 

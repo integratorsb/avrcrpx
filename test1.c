@@ -53,6 +53,7 @@ int main(void)
 	
 	tmr1 = 250;// время переключения
 	leds = 1;
+	crpxInit();
 	crpxSetLeds(1);
 	sei();
 

@@ -8,9 +8,6 @@
 
 #include "avrcrpx.h"
 
-uint8_t crpxSt; 
-uint16_t crpxLedsA;// состояния светодиодов
-
 
 void crpx12SM()
 {
@@ -32,13 +29,13 @@ void crpx12SM()
 				CRPXDDR |= 1<<CRPX2;
 			if(crpxLedsA & 1<<2)
 				CRPXDDR |= 1<<CRPX3;
+				
 			#ifdef COMMON_ANODE
 			CRPXP |= (1<<CRPX0);
 			#else
 			CRPXP &= ~(1<<CRPX0);
 			#endif
 			CRPXDDR |= 1<<CRPX0;
-
 			break;
 		}
 		case ON2:
@@ -57,7 +54,6 @@ void crpx12SM()
 			CRPXP &= ~(1<<CRPX1);
 			#endif
 			CRPXDDR |= 1<<CRPX1;
-
 			break;
 		}
 		case ON3:
@@ -76,7 +72,6 @@ void crpx12SM()
 			CRPXP &= ~(1<<CRPX2);
 			#endif
 			CRPXDDR |= 1<<CRPX2;
-
 			break;
 		}
 
@@ -102,8 +97,4 @@ void crpx12SM()
 	crpxSt++;
 }
 
-void crpxSetLeds(uint16_t val)
-{
-	crpxLedsA = val;	
-}
-
+ 
